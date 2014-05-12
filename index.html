@@ -2,6 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/JavaScript">
+      var img1=new Image();
+      img1.src="homeless_1.jpeg"; 
+      var img2=new Image();
+      img2.src="homeless_2.jpeg"; 
+      var img3=new Image();
+      img3.src="homeless_3.jpeg"; 
+      var img4=new Image();
+      img4.src="homeless_4.jpeg"; 
+      var img5=new Image();
+      img5.src="homeless_5.jpeg"; 
+      var img6=new Image();
+      img6.src="homeless_6.jpeg"; 
+    </script>
+
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,13 +58,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
+          <a class="navbar-brand" href="#">The Path Back Home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#sponsors">Visit Our Sponsors</a></li>
+            <li><a href="#becomesponsor">Become a Sponsor</a></li>
+            <li><a href="#shop">Shop Now</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <!-- xxjason
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -58,10 +79,15 @@
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li>
+              -->
               </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
+
+
+
+
       </div>
     </div>
 
@@ -71,13 +97,46 @@
       <div class="jumbotron">
         <div>
           <center>
-            <img src="logo.jpeg" align="middle">
-          </center>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+            <img src="path_ethos.jpeg" align="middle">
+          
+      <img src="homeless_2.jpeg" name="slide" align="middle" height="400" width="700" vspace="50">
+
+      <!--Script for slideshow -->
+      <script>
+        var step=1;
+        function slideit(){
+          if(!document.images)
+            return
+          document.images.slide.src=eval("img"+step+".src")
+          if(step<6)
+            step++;
+          else
+            step=1;
+          setTimeout("slideit()", 7000)
+        }
+        slideit()
+      </script>
+
+
+      </center>
+      <h2>Our Mission:</h2>
+        <div class="well" >
+
+          <p>The Path Back Home is dedicated to helping the homeless and their families by stopping the cycle 
+
+that prevents homeless people from getting their live back on track. Path Bach Home 
+
+provides training needed to get back into the workforce and the amenities needed to 
+
+have with an improved quality of life. With sponsors, we can solve the challenges of 
+
+homelessness in our cities.
+          </p>
+        </div>
+        <p><a href="#" class="btn btn-primary btn-lg" role="button">Donate Now &raquo;</a></p>
       </div>
 
-
+<!-- xxjason
 
       <div class="page-header">
         <h1>Buttons</h1>
@@ -179,6 +238,8 @@
               </li>
             </ul>
           </div><!--/.nav-collapse -->
+
+      <!-- xxjason
         </div>
       </div>
 
@@ -212,6 +273,8 @@
               </li>
             </ul>
           </div><!--/.nav-collapse -->
+
+        <!-- xxjason
         </div>
       </div>
 
@@ -274,6 +337,7 @@
             <li class="list-group-item">Vestibulum at eros</li>
           </ul>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
         <div class="col-sm-4">
           <div class="list-group">
             <a href="#" class="list-group-item active">
@@ -285,6 +349,7 @@
             <a href="#" class="list-group-item">Vestibulum at eros</a>
           </div>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
         <div class="col-sm-4">
           <div class="list-group">
             <a href="#" class="list-group-item active">
@@ -301,6 +366,7 @@
             </a>
           </div>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
       </div>
 
 
@@ -327,6 +393,7 @@
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
         <div class="col-sm-4">
           <div class="panel panel-success">
             <div class="panel-heading">
@@ -345,6 +412,7 @@
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
         <div class="col-sm-4">
           <div class="panel panel-warning">
             <div class="panel-heading">
@@ -363,6 +431,7 @@
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
+        <!-- xxjason
       </div>
 
 
